@@ -7,13 +7,15 @@ class CustomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return AppBar(
+      scrolledUnderElevation: 0,
       elevation: 0,
       centerTitle: true,
       leadingWidth: screenWidth * 0.3,
       leading: Padding(
         padding: EdgeInsets.only(top: 15, left: screenWidth * 0.06),
-        child: Text(
+        child: const Text(
           "Slash.",
           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
         ),

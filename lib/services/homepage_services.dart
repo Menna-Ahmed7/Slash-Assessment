@@ -99,31 +99,55 @@ final dummydata = {
   ]
 };
 List<ProductInfo> getBestSelling() {
-  return dummydata["bestSelling"]!
-      .map((item) => ProductInfo(
-          id: item["id"].toString(),
-          name: item["name"].toString(),
-          imagepath: item["image"].toString(),
-          price: item["price"].toString()))
-      .toList();
+  try {
+    if (dummydata["bestSelling"] != null) {
+      return dummydata["bestSelling"]!
+          .map((item) => ProductInfo(
+              id: item["id"].toString(),
+              name: item["name"].toString(),
+              imagepath: item["image"].toString(),
+              price: item["price"].toString()))
+          .toList();
+    } else {
+      return [];
+    }
+  } catch (e) {
+    return [];
+  }
 }
 
 List<ProductInfo> getNewArrival() {
-  return dummydata["newArrival"]!
-      .map((item) => ProductInfo(
-          id: item["id"].toString(),
-          name: item["name"].toString(),
-          imagepath: item["image"].toString(),
-          price: item["price"].toString()))
-      .toList();
+  try {
+    if (dummydata["newArrival"] != null) {
+      return dummydata["newArrival"]!
+          .map((item) => ProductInfo(
+              id: item["id"].toString(),
+              name: item["name"].toString(),
+              imagepath: item["image"].toString(),
+              price: item["price"].toString()))
+          .toList();
+    } else {
+      return [];
+    }
+  } catch (e) {
+    return [];
+  }
 }
 
 List<ProductInfo> getRecommendedForYou() {
-  return dummydata["recommendedForYou"]!
-      .map((item) => ProductInfo(
-          id: item["id"].toString(),
-          name: item["name"].toString(),
-          imagepath: item["image"].toString(),
-          price: item["price"].toString()))
-      .toList();
+  try {
+    if (dummydata["recommendedForYou"] != null) {
+      return dummydata["recommendedForYou"]!
+          .map((item) => ProductInfo(
+              id: item["id"].toString(),
+              name: item["name"].toString(),
+              imagepath: item["image"].toString(),
+              price: item["price"].toString()))
+          .toList();
+    } else {
+      return [];
+    }
+  } catch (e) {
+    return [];
+  }
 }

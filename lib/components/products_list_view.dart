@@ -23,24 +23,29 @@ class ProductsListView extends StatelessWidget {
           title,
           style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
         ),
-        Container(
-          height: !kIsWeb ? screenHeight * 0.3 : screenHeight * 0.4,
-          width: screenWidth * 0.9,
+        productsinfo.length > 0
+            ? Container(
+                height: !kIsWeb ? screenHeight * 0.3 : screenHeight * 0.4,
+                width: screenWidth * 0.9,
 
-          // margin: EdgeInsets.only(right: screenWidth * 0.03),
-          child: CustomScrollView(
-            scrollDirection: Axis.horizontal,
-            slivers: <Widget>[
-              SliverList(
-                delegate: SliverChildBuilderDelegate(
-                    (BuildContext context, int index) {
-                  return ProductElement(
-                      info: productsinfo[index],);
-                }, childCount: productsinfo.length),
+                // margin: EdgeInsets.only(right: screenWidth * 0.03),
+                child: CustomScrollView(
+                  scrollDirection: Axis.horizontal,
+                  slivers: <Widget>[
+                    SliverList(
+                      delegate: SliverChildBuilderDelegate(
+                          (BuildContext context, int index) {
+                        return ProductElement(
+                          info: productsinfo[index],
+                        );
+                      }, childCount: productsinfo.length),
+                    )
+                  ],
+                ),
               )
-            ],
-          ),
-        )
+            : Container(
+                child: Text("No products"),
+              )
       ],
     );
   }

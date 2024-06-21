@@ -20,7 +20,8 @@ class Offers extends StatelessWidget {
               padding: const EdgeInsets.only(right: 8.0),
               child: ClipRRect(
                 child: SizedBox(
-                  child: Image.asset('assets/blackfriday.jpg'),
+                  child:
+                      Image.asset('assets/blackfriday.jpg', fit: BoxFit.cover),
                 ),
                 borderRadius: BorderRadius.circular(10),
               ),
@@ -31,7 +32,7 @@ class Offers extends StatelessWidget {
               padding: const EdgeInsets.only(right: 8.0),
               child: ClipRRect(
                 child: SizedBox(
-                  child: Image.asset('assets/redimage.jpg'),
+                  child: Image.asset('assets/redimage.jpg', fit: BoxFit.cover),
                 ),
                 borderRadius: BorderRadius.circular(10),
               ),
