@@ -3,9 +3,11 @@
 - [Description](#Description)
 - [How to run](#How-to-run)
 - [Application](#Application)
+- [Apk Link] (#App-Link)
   
 ## Description <a name = "Description"></a>
-* Implementing the required UI and using cubit state management to control toggling between different screens when clicking on like or add button of any product.
+* Implementing the required UI of the home page
+* Used cubit state management to control toggling between different screens on clicking on  ** like or add ** button of any product.
 ## How to run? <a name = "How-to-run"></a>
 1. Clone the repo
 ```
@@ -25,6 +27,6 @@ https://github.com/Menna-Ahmed7/Slash-Assessment
 https://github.com/Menna-Ahmed7/Slash-Assessment/assets/110634473/093de0d1-1057-4a0b-a830-1ce4306ed2bb
 ### Mobile
 https://github.com/Menna-Ahmed7/Slash-Assessment/assets/110634473/4fb1a6fa-f60c-4d5b-b07f-d6022d5da1b7
-### [Apk Link](https://drive.google.com/drive/u/0/my-drive)
+### [Apk Link](https://drive.google.com/drive/u/0/my-drive) <a name = "App-Link"></a>
 
 
