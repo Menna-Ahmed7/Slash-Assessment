@@ -3,7 +3,7 @@
 - [Description](#Description)
 - [How to run](#How-to-run)
 - [Application](#Application)
-- [Apk Link] (#App-Link)
+- [Apk Link](#App-Link)
   
 ## Description <a name = "Description"></a>
 * Implementing the required UI of the home page
