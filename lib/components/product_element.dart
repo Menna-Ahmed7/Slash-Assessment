@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:slash_task_/cubits/navbar_cubit.dart';
 import 'package:slash_task_/models/product_info.dart';
 
 class ProductElement extends StatefulWidget {
@@ -56,6 +58,7 @@ class _ProductElementState extends State<ProductElement> {
                   onTap: () {
                     widget.info.isLiked = !widget.info.isLiked;
                     setState(() {});
+                    BlocProvider.of<NavBarCubit>(context).toggleMenu(1);
                   },
                   // child: widget.info.isLiked
                   //     ? Icon(FontAwesomeIcons.heart)
@@ -104,13 +107,18 @@ class _ProductElementState extends State<ProductElement> {
               //   ),
               // ),
               // SizedBox(width: screenWidth*0.,),
-              CircleAvatar(
-                backgroundColor: Colors.black,
-                maxRadius: !kIsWeb ? screenWidth * 0.03 : 17,
-                child: Container(
-                  child: Text(
-                    "+",
-                    style: TextStyle(color: Colors.white),
+              InkWell(
+                onTap: () {
+                  BlocProvider.of<NavBarCubit>(context).toggleMenu(2);
+                },
+                child: CircleAvatar(
+                  backgroundColor: Colors.black,
+                  maxRadius: !kIsWeb ? screenWidth * 0.03 : 17,
+                  child: Container(
+                    child: Text(
+                      "+",
+                      style: TextStyle(color: Colors.white),
+                    ),
                   ),
                 ),
               )
