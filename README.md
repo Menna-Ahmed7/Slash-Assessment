@@ -9,6 +9,10 @@
 * Implementing the required UI of the home page
 * Used cubit state management to dynamically control screen transitions based on user selections in the **bottom navigation bar**.
 ## How to run? <a name = "How-to-run"></a>
+### Prerequistes
+* Flutter SDK
+* IDE that flutter can run on (VS Code, Android Studio, etc..)
+### Running the application
 1. Clone the repo
 ```
 https://github.com/Menna-Ahmed7/Slash-Assessment
