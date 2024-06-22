@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:slash_task_/components/appBar.dart';
 import 'package:slash_task_/components/bottom_nav_bar.dart';
 import 'package:slash_task_/cubits/navbar_cubit.dart';
+import 'package:slash_task_/services/homepage_services.dart';
 import 'package:slash_task_/views/responsive_home_screen.dart';
 
 void main() {
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    // getData();
     return BlocProvider(
       create: (context) => NavBarCubit(),
       child: MaterialApp(

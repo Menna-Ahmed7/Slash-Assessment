@@ -8,9 +8,10 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 
 class ProductsListView extends StatelessWidget {
   ProductsListView(
-      {super.key, required this.productsinfo, required this.title});
+      {super.key, required this.title, required this.getProductsInfo});
 
-  final List<ProductInfo> productsinfo;
+  final Function getProductsInfo;
+
   final String title;
   final ScrollController _controller = ScrollController();
 
@@ -20,16 +21,18 @@ class ProductsListView extends StatelessWidget {
     double screenWidth = MediaQuery.of(context).size.width;
     // print(getBestSelling()[0]);
     // List<ProductInfo> productsinfo = getBestSelling();
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        ListHeader(title: title, controller: _controller),
-        productsinfo.length > 0
-            ? Container(
+    return FutureBuilder(
+      future: getProductsInfo(),
+      builder: (context, snapshot) {
+        if (snapshot.hasData) {
+          List<ProductInfo> data = snapshot.data! as List<ProductInfo>;
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              ListHeader(title: title, controller: _controller),
+              Container(
                 height: !kIsWeb ? screenHeight * 0.3 : screenHeight * 0.4,
                 width: screenWidth * 0.9,
-
-                // margin: EdgeInsets.only(right: screenWidth * 0.03),
                 child: CustomScrollView(
                   controller: _controller,
                   scrollDirection: Axis.horizontal,
@@ -38,17 +41,20 @@ class ProductsListView extends StatelessWidget {
                       delegate: SliverChildBuilderDelegate(
                           (BuildContext context, int index) {
                         return ProductElement(
-                          info: productsinfo[index],
+                          info: data[index],
                         );
-                      }, childCount: productsinfo.length),
+                      }, childCount: data.length),
                     )
                   ],
                 ),
               )
-            : Container(
-                child: Text("No products"),
-              )
-      ],
+            ],
+          );
+        } else
+          return Container(
+            child: Text("No products"),
+          );
+      },
     );
   }
 }

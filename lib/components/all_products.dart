@@ -8,17 +8,21 @@ class ProductsDisplay extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final List<ProductInfo> bestSellings = getBestSelling();
-    final List<ProductInfo> newArrivals = getNewArrival();
-    final List<ProductInfo> recommended = getRecommendedForYou();
-
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        ProductsListView(productsinfo: bestSellings, title: "Best Selling"),
-        ProductsListView(productsinfo: newArrivals, title: "New Arrival"),
         ProductsListView(
-            productsinfo: recommended, title: "Recommended for you")
+          title: "Best Selling",
+          getProductsInfo: getBestSelling,
+        ),
+        ProductsListView(
+          title: "New Arrival",
+          getProductsInfo: getNewArrival,
+        ),
+        ProductsListView(
+          title: "Recommended for you",
+          getProductsInfo: getRecommendedForYou,
+        )
       ],
     );
   }

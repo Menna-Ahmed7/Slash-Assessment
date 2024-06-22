@@ -19,6 +19,7 @@ class ProductElement extends StatefulWidget {
 class _ProductElementState extends State<ProductElement> {
   @override
   Widget build(BuildContext context) {
+    print(widget.info);
     double screenHeight = MediaQuery.of(context).size.height;
     double screenWidth = MediaQuery.of(context).size.width;
     final displayedPrice = "EGP " + widget.info.price;

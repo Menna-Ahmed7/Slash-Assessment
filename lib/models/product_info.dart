@@ -6,7 +6,7 @@ class ProductInfo {
   bool isLiked = false;
   bool isAdded = false;
 
-  ProductInfo({
+  ProductInfo({ 
     required this.id,
     required this.name,
     required this.imagepath,
