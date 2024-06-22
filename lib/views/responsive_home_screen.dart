@@ -18,13 +18,13 @@ class ResponsiveHomeScreen extends StatelessWidget {
 
     return BlocBuilder<NavBarCubit, NavBarState>(
       builder: (context, state) {
-        if (state is NavBarHomeState || state is NavBarInitialState)
+        if (state is NavBarHomeState || state is NavBarInitialState) {
           return Padding(
             padding: EdgeInsets.only(
               left: screenWidth * 0.06,
             ),
             child: ListView(
-              children: const [
+              children: [
                 CustomSearchBar(),
                 Offers(),
                 Categories(),
@@ -32,7 +32,7 @@ class ResponsiveHomeScreen extends StatelessWidget {
               ],
             ),
           );
-        else
+        } else
           return ListView(
             children: [],
           );

@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:slash_task_/components/category_element.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:slash_task_/components/list_header.dart';
 
 class Categories extends StatelessWidget {
-  const Categories({super.key});
+  Categories({super.key});
+  final ScrollController _controller = ScrollController();
 
   @override
   Widget build(BuildContext context) {
@@ -14,10 +16,7 @@ class Categories extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          "Categories",
-          style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-        ),
+        ListHeader(title: "Categories", controller: _controller),
         Container(
           height: screenHeight * 0.2,
           width: screenWidth * 0.9,
@@ -25,6 +24,7 @@ class Categories extends StatelessWidget {
           margin: EdgeInsets.only(top: screenHeight * 0.02),
           // margin: EdgeInsets.only(right: screenWidth * 0.03),
           child: CustomScrollView(
+            controller: _controller,
             scrollDirection: Axis.horizontal,
             slivers: [
               CategoryElement(

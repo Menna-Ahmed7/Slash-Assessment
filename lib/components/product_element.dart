@@ -33,16 +33,6 @@ class _ProductElementState extends State<ProductElement> {
           child: Stack(
             children: [
               ClipRRect(
-                // child: Container(
-                //   child: Image(
-                //     image: AssetImage('assets/images/recommended_1.png'),
-                //     alignment: Alignment.center,
-                //     height: double.infinity,
-                //     width: double.infinity,
-                //     fit: BoxFit.fill,
-                //   ),
-                //   color: Colors.black,
-                // ),
                 borderRadius: BorderRadius.circular(10),
                 child: SizedBox(
                     // color: Colors.black,
@@ -99,14 +89,6 @@ class _ProductElementState extends State<ProductElement> {
                   fontSize: !kIsWeb ? screenWidth * 0.05 : 20,
                 ),
               ),
-              // Text(
-              //   "55",
-              //   style: TextStyle(
-              //     fontWeight: FontWeight.bold,
-              //     fontSize: screenWidth * 0.042,
-              //   ),
-              // ),
-              // SizedBox(width: screenWidth*0.,),
               InkWell(
                 onTap: () {
                   BlocProvider.of<NavBarCubit>(context).toggleMenu(2);
