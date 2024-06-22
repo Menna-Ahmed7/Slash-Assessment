@@ -18,9 +18,9 @@
 https://github.com/Menna-Ahmed7/Slash-Assessment
 ```
 2. Navigate to the project folder (inside the Slash-Assessment folder)
-   ```
-   flutter pub get
-   ```
+ ```
+ flutter pub get
+ ```
 3. Open the code in vs code and choose the appropriate device
 4. run the main.dart file
 ## Application  <a name = "Application"></a>
