@@ -15,7 +15,7 @@
 ### Running the application
 1. Clone the repo
 ```
-https://github.com/Menna-Ahmed7/Slash-Assessment
+git clone https://github.com/Menna-Ahmed7/Slash-Assessment
 ```
 2. Navigate to the project folder (inside the Slash-Assessment folder)
  ```
