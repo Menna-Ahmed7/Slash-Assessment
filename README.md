@@ -17,16 +17,14 @@ https://github.com/Menna-Ahmed7/Slash-Assessment
 3. run the main.dart file
 ## Application  <a name = "Application"></a>
 ## Screenshots
-![image](https://github.com/Menna-Ahmed7/Slash-Assessment/assets/110634473/cdccca84-a160-4a21-b87b-6a925bc23995)
-
-![image](https://github.com/Menna-Ahmed7/Slash-Assessment/assets/110634473/fc9a89b8-52ba-48fc-ac5f-e16075d79692)
-
-![image](https://github.com/Menna-Ahmed7/Slash-Assessment/assets/110634473/c2a9216e-5473-4a4f-a9a8-ce664181dc45)
+![image](https://github.com/Menna-Ahmed7/Slash-Assessment/assets/110634473/b4c3dfcc-c39e-45f2-8b06-c3db2cde292d)
+![image](https://github.com/Menna-Ahmed7/Slash-Assessment/assets/110634473/c59c6726-532d-4958-b739-52f08fe8aae5)
+![image](https://github.com/Menna-Ahmed7/Slash-Assessment/assets/110634473/d86e076f-4a48-43ed-91cc-3a3b242c536e)
 ## Videos
 ### Web
-https://github.com/Menna-Ahmed7/Slash-Assessment/assets/110634473/093de0d1-1057-4a0b-a830-1ce4306ed2bb
+https://github.com/Menna-Ahmed7/Slash-Assessment/assets/110634473/3342a44c-890f-4b4a-86bc-5935ee88746b
 ### Mobile
-https://github.com/Menna-Ahmed7/Slash-Assessment/assets/110634473/4fb1a6fa-f60c-4d5b-b07f-d6022d5da1b7
-### [Apk Link](https://drive.google.com/file/d/10lx_xLco_kKaFVxlImvtWj7sEB9reSu8/view?usp=drive_link) <a name = "App-Link"></a>
+https://github.com/Menna-Ahmed7/Slash-Assessment/assets/110634473/07ccf1d8-db1a-4a31-acb2-6bf93c8bba84
+### [Apk Link](https://drive.google.com/file/d/14hGQA14cHjoSvVUeH2tjgvhSLJIqR-1v/view?usp=sharing) <a name = "App-Link"></a>
 
 
