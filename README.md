@@ -7,7 +7,7 @@
   
 ## Description <a name = "Description"></a>
 * Implementing the required UI of the home page
-* Used cubit state management to control toggling between different screens on clicking on  **like or add** button of any product.
+* Used cubit state management to dynamically control screen transitions based on user selections in the bottom navigation bar.
 ## How to run? <a name = "How-to-run"></a>
 1. Clone the repo
 ```
