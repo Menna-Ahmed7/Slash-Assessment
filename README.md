@@ -19,7 +19,7 @@ https://github.com/Menna-Ahmed7/Slash-Assessment
 ## Screenshots
 ![image](https://github.com/Menna-Ahmed7/Slash-Assessment/assets/110634473/b4c3dfcc-c39e-45f2-8b06-c3db2cde292d)
 ![image](https://github.com/Menna-Ahmed7/Slash-Assessment/assets/110634473/c59c6726-532d-4958-b739-52f08fe8aae5)
-![image](https://github.com/Menna-Ahmed7/Slash-Assessment/assets/110634473/d86e076f-4a48-43ed-91cc-3a3b242c536e)
+![image](https://github.com/Menna-Ahmed7/Slash-Assessment/assets/110634473/9fd1fe27-d61b-4f9a-b5d4-f2276ec74f8f)
 ## Videos
 ### Web
 https://github.com/Menna-Ahmed7/Slash-Assessment/assets/110634473/3342a44c-890f-4b4a-86bc-5935ee88746b
