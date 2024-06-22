@@ -4,10 +4,12 @@ class ProductInfo {
   final String imagepath;
   final String price;
   bool isLiked = false;
+  bool isAdded = false;
 
-  ProductInfo(
-      {required this.id,
-      required this.name,
-      required this.imagepath,
-      required this.price});
+  ProductInfo({
+    required this.id,
+    required this.name,
+    required this.imagepath,
+    required this.price,
+  });
 }

@@ -33,8 +33,15 @@ class ResponsiveHomeScreen extends StatelessWidget {
             ),
           );
         } else
-          return ListView(
-            children: [],
+          return Padding(
+            padding: EdgeInsets.only(
+              left: screenWidth * 0.06,
+            ),
+            child: ListView(
+              children: [
+                CustomSearchBar(),
+              ],
+            ),
           );
       },
     );

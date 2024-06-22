@@ -48,7 +48,7 @@ class _ProductElementState extends State<ProductElement> {
                   onTap: () {
                     widget.info.isLiked = !widget.info.isLiked;
                     setState(() {});
-                    BlocProvider.of<NavBarCubit>(context).toggleMenu(1);
+                    // BlocProvider.of<NavBarCubit>(context).toggleMenu(1);
                   },
                   // child: widget.info.isLiked
                   //     ? Icon(FontAwesomeIcons.heart)
@@ -91,7 +91,9 @@ class _ProductElementState extends State<ProductElement> {
               ),
               InkWell(
                 onTap: () {
-                  BlocProvider.of<NavBarCubit>(context).toggleMenu(2);
+                  widget.info.isAdded = !widget.info.isAdded;
+                  setState(() {});
+                  // BlocProvider.of<NavBarCubit>(context).toggleMenu(2);
                 },
                 child: CircleAvatar(
                   backgroundColor: Colors.black,
@@ -99,7 +101,10 @@ class _ProductElementState extends State<ProductElement> {
                   child: Container(
                     child: Text(
                       "+",
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(
+                          color: !widget.info.isAdded
+                              ? Colors.white
+                              : Color.fromARGB(255, 206, 53, 11)),
                     ),
                   ),
                 ),

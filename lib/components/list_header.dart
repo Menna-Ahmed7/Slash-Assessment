@@ -33,7 +33,7 @@ class ListHeader extends StatelessWidget {
                 onTap: _scrollRight,
                 child: Text("See all",
                     style: TextStyle(
-                      fontSize: !kIsWeb ? screenWidth * 0.045 : 22,
+                      fontSize: !kIsWeb ? screenWidth * 0.04 : 22,
                     )),
               ),
               InkWell(
@@ -42,7 +42,7 @@ class ListHeader extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 8.0),
                   child: Icon(
                     FontAwesomeIcons.arrowRight,
-                    size: screenWidth * 0.04,
+                    size: !kIsWeb ? screenWidth * 0.04 : 22,
                   ),
                 ),
               ),
