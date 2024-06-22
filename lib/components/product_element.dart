@@ -38,7 +38,11 @@ class _ProductElementState extends State<ProductElement> {
                 child: SizedBox(
                     // color: Colors.black,
                     width: !kIsWeb ? screenWidth * 0.4 : 150,
-                    height: !kIsWeb ? screenHeight * 0.18 : 130,
+                    height: !kIsWeb
+                        ? screenHeight * 0.18
+                        : screenHeight > 300
+                            ? screenHeight * 0.2
+                            : screenHeight * 0.1,
                     child:
                         Image.asset(widget.info.imagepath, fit: BoxFit.cover)),
               ),
